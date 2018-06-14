@@ -1,4 +1,4 @@
-# louie-zhong
+# louie-zong
 
 A (hopefully nicely aesethic) website made to collate a bunch of social media information for louie zhong!
 
