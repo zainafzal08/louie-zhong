@@ -11,4 +11,8 @@ Mostly a testing ground for seeing if a social media collater site can be genera
 - [X] Decide on title font
 - [ ] Set up Basic Nav Bar + finish Landing
 - [ ] Update font sizes based on screen size (get landing working on mobile)
+- [ ] Load in animation (nav elements fan out)
+- [ ] scroll down animation (move navbar from center to top and smallify title)
+- [ ] Set up about section (with smooth scroll from navbar + navbar highlight)
 - [ ] Set up social media summary cards. (get flex working on them)
+
