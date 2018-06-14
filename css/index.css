@@ -1,0 +1,71 @@
+body {
+  /* fallback for old browsers */
+  background: #efa26c;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, #e7568d, #efa26c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #e7568d, #efa26c);
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+}
+
+/* Title psudo bootstrap flex boxes */
+.title {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title h1{
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  color: #222;
+  font-size: 3em;
+  text-shadow: 1px 1px #ffffff;
+}
+@media (max-width: 720px){
+  .title .left {
+    width: 50%;
+    order: 2;
+  }
+  .title .center {
+    width: 100%;
+    order: 1;
+  }
+  .title .right {
+    width: 50%;
+    order: 3;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 960px){
+  .title .left {
+    width: 25%;
+  }
+  .title .center {
+    width: 50%;
+  }
+  .title .right {
+    width: 25%;
+  }
+}
+
+@media (min-width: 961px){
+  .title .left {
+    width: 30%;
+  }
+  .title .center {
+    width: 40%;
+  }
+  .title .right {
+    width: 30%;
+  }
+}
