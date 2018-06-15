@@ -13,6 +13,19 @@ body {
   display: flex;
   align-content: center;
 }
+/* Nav Elements */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-elem {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #222;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /* Title psudo bootstrap flex boxes */
 .title {
@@ -23,7 +36,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
+.profile {
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 .title h1{
   font-weight: 100;
   font-family: 'Pacifico', cursive;
@@ -31,6 +47,7 @@ body {
   font-size: 3rem;
   text-shadow: 1px 1px #ffffff;
 }
+
 @media (max-width: 720px){
   .title .left {
     width: 50%;

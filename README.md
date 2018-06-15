@@ -13,6 +13,6 @@ Mostly a testing ground for seeing if a social media collater site can be genera
 - [ ] Update font sizes based on screen size (get landing working on mobile)
 - [ ] Load in animation (nav elements fan out)
 - [ ] scroll down animation (move navbar from center to top and smallify title)
+       - Perhaps just have size of landing div decrease with scroll
 - [ ] Set up about section (with smooth scroll from navbar + navbar highlight)
 - [ ] Set up social media summary cards. (get flex working on them)
-
