@@ -8,7 +8,13 @@
  *     #222222, #EBEBEB, #FFFFFF
  */
 
+/* Basic set up */
+
 body {
+  margin: 0;
+}
+
+.gradient {
   /* fallback for old browsers */
   background: #efa26c;
   /* Chrome 10-25, Safari 5.1-6 */
@@ -16,12 +22,25 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to bottom, #e7568d, #efa26c);
 }
+.gradient-reverse {
+  /* fallback for old browsers */
+  background: #efa26c;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom,#efa26c,#e7568d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom,#efa26c,#e7568d);
+}
 
 .landing {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-content: center;
+  margin: 0;
+}
+
+/* Content Blocks */
+.block {
+  width: 100%;
+  height: 500px;
 }
 
 /* animations */
@@ -69,6 +88,8 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  left: 0;
 }
 .profile {
   border-radius: 50%;
