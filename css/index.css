@@ -1,3 +1,13 @@
+/*
+ * Written by Zain Afzal
+ * Box shadow from https://codepen.io/sdthornton/pen/wBZdXq
+ * 13/6/2018
+ *
+ * Colour Scheme
+ *     #e7568d, #efa26c, #4bc6e7
+ *     #222222, #EBEBEB, #FFFFFF
+ */
+
 body {
   /* fallback for old browsers */
   background: #efa26c;
@@ -13,6 +23,13 @@ body {
   display: flex;
   align-content: center;
 }
+
+/* animations */
+@keyframes hr-expand {
+    from {width: 0%}
+    to {width: 100%}
+}
+
 /* Nav Elements */
 .nav {
   display: flex;
@@ -25,8 +42,24 @@ body {
   color: #222;
   font-size: 1.5rem;
   cursor: pointer;
+  text-align: center;
+}
+.nav-elem hr {
+  border: none;
+  margin: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #222;
+}
+.nav-elem:hover > hr {
+  animation-name: hr-expand;
+  animation-duration: 0.5s;
+  width: 100%;
 }
 
+.nav-elem.current hr {
+  width: 100%;
+}
 /* Title psudo bootstrap flex boxes */
 .title {
   width: 100%;
