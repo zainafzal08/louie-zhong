@@ -15,11 +15,31 @@ let configObj = {
             "original": null
           },
           {
-            "id":"title-container",
-            "final":0,
+            "id":"titleContainer",
+            "final":"brand",
             "property": {
-                "name": "width",
+                "name": "height",
                 "type": "int",
+                "suffix": "px"
+            },
+            "original": null
+          },
+          {
+            "id":"brand",
+            "delta":-10,
+            "property": {
+                "name": "font-size",
+                "type": "float",
+                "suffix": "px"
+            },
+            "original": null
+          },
+          {
+            "class":"nav-elem",
+            "delta":-5,
+            "property": {
+                "name": "font-size",
+                "type": "float",
                 "suffix": "px"
             },
             "original": null
